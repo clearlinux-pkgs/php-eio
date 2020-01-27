@@ -4,7 +4,7 @@
 #
 Name     : php-eio
 Version  : 2.0.4
-Release  : 2
+Release  : 3
 URL      : https://pecl.php.net//get/eio-2.0.4.tgz
 Source0  : https://pecl.php.net//get/eio-2.0.4.tgz
 Summary  : No detailed summary available
@@ -31,6 +31,7 @@ lib components for the php-eio package.
 
 %prep
 %setup -q -n eio-2.0.4
+cd %{_builddir}/eio-2.0.4
 
 %build
 export http_proxy=http://127.0.0.1:9/
@@ -49,4 +50,4 @@ make  %{?_smp_mflags}
 
 %files lib
 %defattr(-,root,root,-)
-/usr/lib64/extensions/no-debug-non-zts-20180731/eio.so
+/usr/lib64/extensions/no-debug-non-zts-20190902/eio.so
