@@ -4,7 +4,7 @@
 #
 Name     : php-eio
 Version  : 2.0.4
-Release  : 6
+Release  : 7
 URL      : https://pecl.php.net//get/eio-2.0.4.tgz
 Source0  : https://pecl.php.net//get/eio-2.0.4.tgz
 Summary  : No detailed summary available
