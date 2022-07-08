@@ -4,13 +4,12 @@
 #
 Name     : php-eio
 Version  : 2.0.4
-Release  : 8
+Release  : 10
 URL      : https://pecl.php.net//get/eio-2.0.4.tgz
 Source0  : https://pecl.php.net//get/eio-2.0.4.tgz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : BSD-2-Clause PHP-3.01
-Requires: php-eio-lib = %{version}-%{release}
 BuildRequires : buildreq-php
 
 %description
@@ -21,14 +20,6 @@ DESCRIPTION
 This is a PHP extension wrapping functions of the libeio library written by Marc
 Lehmann <libeio@schmorp.de>(see <http://software.schmorp.de/pkg/libeio.html>).
 
-%package lib
-Summary: lib components for the php-eio package.
-Group: Libraries
-
-%description lib
-lib components for the php-eio package.
-
-
 %prep
 %setup -q -n eio-2.0.4
 cd %{_builddir}/eio-2.0.4
@@ -38,7 +29,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 phpize
-%configure
+%configure --disable-static
 make  %{?_smp_mflags}
 
 %install
@@ -47,7 +38,3 @@ make  %{?_smp_mflags}
 
 %files
 %defattr(-,root,root,-)
-
-%files lib
-%defattr(-,root,root,-)
-/usr/lib64/extensions/no-debug-non-zts-20190902/eio.so
