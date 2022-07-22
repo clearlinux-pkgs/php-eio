@@ -1,5 +1,5 @@
 PKG_NAME := php-eio
-URL = https://pecl.php.net//get/eio-2.0.4.tgz
+URL = https://github.com/rosmanov/pecl-eio/archive/refs/tags/3.0.0RC4.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
