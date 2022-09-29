@@ -4,7 +4,7 @@
 #
 Name     : php-eio
 Version  : 3.0.0rc4
-Release  : 22
+Release  : 23
 URL      : https://github.com/rosmanov/pecl-eio/archive/refs/tags/3.0.0RC4.tar.gz
 Source0  : https://github.com/rosmanov/pecl-eio/archive/refs/tags/3.0.0RC4.tar.gz
 Summary  : No detailed summary available
