@@ -4,30 +4,31 @@
 #
 Name     : php-eio
 Version  : 3.0.0rc4
-Release  : 25
+Release  : 26
 URL      : https://github.com/rosmanov/pecl-eio/archive/refs/tags/3.0.0RC4.tar.gz
 Source0  : https://github.com/rosmanov/pecl-eio/archive/refs/tags/3.0.0RC4.tar.gz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : BSD-2-Clause PHP-3.01
+Requires: php-eio-lib = %{version}-%{release}
+Requires: php-eio-license = %{version}-%{release}
 BuildRequires : buildreq-php
 
 %description
 # Eio PECL Extension
 [![Build Status](https://travis-ci.com/rosmanov/pecl-eio.svg?branch=master)](https://travis-ci.com/rosmanov/pecl-eio)
 
-
 %package lib
-Summary: lib components for the  php-eio package.
+Summary: lib components for the php-eio package.
 Group: Libraries
-Requires:  php-eio-license = %{version}-%{release}
+Requires: php-eio-license = %{version}-%{release}
 
 %description lib
 lib components for the php-eio package.
 
 
 %package license
-Summary: license components for the znc package.
+Summary: license components for the php-eio package.
 Group: Default
 
 %description license
@@ -58,9 +59,9 @@ cp %{_builddir}/pecl-eio-3.0.0RC4/libeio/LICENSE %{buildroot}/usr/share/package-
 
 %files lib
 %defattr(-,root,root,-)
-/usr/lib64/extensions/no-debug-non-zts-20210902/eio.so
+/usr/lib64/extensions/no-debug-non-zts-20220829/eio.so
 
 %files license
-%defattr(-,root,root,-)
+%defattr(0644,root,root,0755)
 /usr/share/package-licenses/php-eio/27b46923d7341b6bb717d06db4850b1180d565b2
 /usr/share/package-licenses/php-eio/fea251a93b840fb5da2ba0ea287c76507fd99303
