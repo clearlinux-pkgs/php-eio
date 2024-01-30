@@ -7,7 +7,7 @@
 #
 Name     : php-eio
 Version  : 3.1.0
-Release  : 53
+Release  : 54
 URL      : https://github.com/rosmanov/pecl-eio/archive/3.1.0/pecl-eio-3.1.0.tar.gz
 Source0  : https://github.com/rosmanov/pecl-eio/archive/3.1.0/pecl-eio-3.1.0.tar.gz
 Summary  : No detailed summary available
