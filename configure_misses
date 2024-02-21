@@ -2,8 +2,7 @@ Configure miss: eio debug support
 Configure miss: icc
 Configure miss: if debug is enabled
 Configure miss: if zts is enabled
-Configure miss: readahead
-Configure miss: splice, vmsplice and tee
+Configure miss: posix_close
 Configure miss: suncc
 Configure miss: sync_file_range
 Configure miss: x86_64-generic-linux-gnu-file
