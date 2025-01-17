@@ -1,7 +1,7 @@
 Configure miss: eio debug support
 Configure miss: icc
-Configure miss: if debug is enabled
-Configure miss: if zts is enabled
+Configure miss: if PHP is built with thread safety (ZTS)
+Configure miss: if debugging is enabled
 Configure miss: posix_close
 Configure miss: suncc
 Configure miss: sync_file_range
